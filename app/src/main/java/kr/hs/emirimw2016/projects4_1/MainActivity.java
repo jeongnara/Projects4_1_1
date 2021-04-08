@@ -60,9 +60,18 @@ public class MainActivity extends AppCompatActivity {
                     result = num1 * num2;
                     break;
                 case R.id.btn4:
+                    if (strEdit2.equals("0")){
+                        Log.v("***strEdid2", strEdit2);
+                        Toast.makeText(getApplicationContext(),  "0으로 나눗셈을 할 수 없음.", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
                     result = num1 / num2;
                     break;
                 case R.id.btn5:
+                    if (strEdit2.equals("0")){
+                        Toast.makeText(getApplicationContext(),  "0으로 나눗셈을 할 수 없음.", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
                     result = num1 % num2;
                     break;
             }
