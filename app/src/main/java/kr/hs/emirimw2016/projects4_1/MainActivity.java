@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         btnMulti.setOnClickListener(btnListener);
         btnDiv.setOnClickListener(btnListener);
         btnMod.setOnClickListener(btnListener);
+
     }
     View.OnClickListener btnListener = new View.OnClickListener() {
         public void onClick(View v) {
